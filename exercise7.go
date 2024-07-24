@@ -1,6 +1,13 @@
 package main
 
-import "slices"
+import (
+	"math/rand"
+	"slices"
+)
+
+func random(min int, max int) int {
+	return rand.Intn(max-min) + min
+}
 
 func roll() int {
 	return random(1, 6)
