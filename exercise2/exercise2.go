@@ -30,5 +30,6 @@ func main() {
 	sl(&middleName)
 	fmt.Printf("Enter last name: ")
 	sl(&lastName)
-	pl(joinName(firstName, middleName, lastName))
+	completeName := joinName(firstName, middleName, lastName)
+	pl(completeName)
 }
